@@ -76,8 +76,9 @@ body{
 }
 #welcome-img{
     position: absolute;
-    left: 562px;
-    top: 166px;
+    width: 67vw;
+    left: 32vw;
+    top: 15vh;
 }
 #welcome_text{
     font-size: 64px;
