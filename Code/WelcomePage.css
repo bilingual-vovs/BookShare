@@ -13,23 +13,23 @@
 }
 body{
     background-color: #F7F3F4;
-    height: 3344px;
-    width: 1830px;
+    height: 174,166666667vh;
+    width: 100vh;
 }
 #logo {
-    width: 178px;
+    width: 18.5vh;
     position: absolute;
-    left: 375px;
-    top: 24px;
+    left: 21%;
+    top: 1.75vh;
 }
 #head_text1{
-    font-size: 18px;
+    font-size: 1.9vh;
     font-family: montserrat-regular;
     /* transition-duration: 300ms;
     transition-property: background-color; */
     position: absolute;
-    left: 765px;
-    top: 26px;
+    left: 39.84375vw;
+    top: 1.75vh;
 }
 
    
@@ -39,31 +39,31 @@ body{
     
 } */
 #head_text2{
-    font-size: 18px;
+    font-size: 1.9vh;
     font-family: montserrat-regular;
     position: absolute;
-    left: 1041px;
-    top: 26px;
+    left: 56vw;
+    top: 1.75vh;
 }
 #head_text3{
-    font-size: 18px;
+    font-size: 1.9vh;
     font-family: montserrat-regular;
     position: absolute;
-    left: 1181px;
-    top: 26px;
+    left: 64vw;
+    top: 1.75vh;
 }
 
 #sign-up-button{
     background-color: #FA7269;
     position: absolute;
     border: 0px;
-    width: 185px;
-    height: 42px;
-    font-size: 18px;
+    width: 10vw;
+    height: 4.5vh;
+    font-size: 1.9vh;
     font-family: montserrat-regular;
     color: white;
-    left: 1362px;
-    top: 26px;
+    left: 75vw;
+    top: 1.75vh;
     transition-duration: 300ms;
     transition-property: background-color;
 
