@@ -19,7 +19,7 @@ body{
 #logo {
     width: 18.5vh;
     position: absolute;
-    left: 21%;
+    left: 20vw;
     top: 1.75vh;
 }
 #head_text1{
@@ -76,41 +76,41 @@ body{
 }
 #welcome-img{
     position: absolute;
-    width: 67vw;
+    width: 67vw;    
     left: 32vw;
-    top: 15vh;
+    top: 14vh;
 }
 #welcome_text{
-    font-size: 64px;
+    font-size: 7vh;
     font-family: montserrat-m;
     position: absolute;
-    left: 379px;
-    top: 240px;
+    left: 20vw;
+    top: 24vh;
 }
 #welcome_logo{
     position: absolute;
-    left: 379px;
-    top: 375px;
-    width: 300px;
+    left: 20vw;
+    top: 39vh;
+    width: 18vw;
 }
 #phraze{
     font-family: montserrat-regular;
-    font-size: 18px;
+    font-size: 1.9vh;
     position: absolute;
-    left: 379px;
-    top: 455px;
+    left: 20vw;
+    top: 49vh;
 }
 #get-started{
     background-color: #FA7269;
     position: absolute;
     border: 0px;
-    width: 169px;
-    height: 42px;
-    font-size: 18px;
+    width: 9.5vw;
+    height: 4.5vh;
+    font-size: 1.9vh;
     font-family: montserrat-regular;
     color: white;
-    left: 379px;
-    top: 555px;
+    left: 20vw;
+    top: 57vh;
     transition-duration: 300ms;
     transition-property: background-color;
 }
@@ -123,23 +123,37 @@ body{
 #int_video{
     background-color: #BED2FA;
     position: absolute;
-    left: 0px;
-    top: 1089px;
-    width: 1830px;
-    height: 916px;
+    left: 0vw;
+    top: 110vh;
+    width: 99vw;
+    height: 90vh;
 }
 #video{
-    width: auto;
-    height: 600px;
-    left: 400px;
-    top: 216px;
+    width: 65vw;
+    height: 65vh;
+    left: 17vw;
+    top: 20vh;
     border-radius: 0px;
     position: absolute;
     background-color: black;
 }
 #int-img{
     text-align: center;
-    font-size: 40px;
+    font-size: 4vh;
     font-family: saria;
-    margin-top: 80px;
+    margin-top: 8vh;
+}
+#img-2{
+    position: absolute;
+    top: 240vh;
+    left: 8vw;
+}
+#what-text-1{
+    text-align: center;
+    width: 18vw;
+    height: 12vh;
+    padding-top: 6vh;
+    border-style: dashed;
+    border-width: 0.15vw;
+    background-color: #BED2FA;
 }
