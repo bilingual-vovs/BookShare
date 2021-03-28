@@ -145,15 +145,45 @@ body{
 }
 #img-2{
     position: absolute;
-    top: 240vh;
-    left: 8vw;
+    width: 52vw;
+    top: 241vh;
+    left: 4vw;
 }
 #what-text-1{
+    top: 215vh;
+    left: 23vw;
+}
+#what-h-1{
+    left: 31vw;
+    top: 217vh;
+}   
+.what-h{
+    font-size: 1.7vw;
+    z-index: 1;
+    color: #2E4470;
+    position: absolute;
+}
+.what-text{
+    font-family: montserrat-regular;
     text-align: center;
-    width: 18vw;
-    height: 12vh;
-    padding-top: 6vh;
+    position: absolute;
+    font-size: 0.88vw;
+    width: 19vw;
+    padding-top: 8vh;
+    padding-left: 1.5vw;
+    padding-bottom: 2.5vh;
+    padding-right: 1.5vw;
     border-style: dashed;
+    color: #2E4470;
+    border-color: #3A49CD;
     border-width: 0.15vw;
-    background-color: #BED2FA;
+    background-color: #DDE8FD;
+}
+#what-h-2{
+    top: 217vh;
+    left: 58vw;
+}
+#what-text-2{
+    top: 215vh;
+    left: 50vw;
 }
