@@ -217,3 +217,17 @@ body{
     width: 14vw;
     top: 4vh;
 }
+#phone{
+    color: white;
+    font-family: saria;
+    font-size: 1.9vh;
+    transition-duration: 300ms;
+    transition-property: color;
+
+}
+#phone:hover{
+    color: #FA5C47;
+}
+#phone:active{
+    color: #9E332E;
+}
