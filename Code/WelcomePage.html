@@ -28,6 +28,7 @@
 	<h2 id="int-img">Делись книгами, не выбрасывай их</h2>
 </div>
 <div>
+	<h1 id="what-h">Что можно зделать с книгами?</h1>
 	<img id="img-2" src="Resim2.svg" alt="">
 	<h2 class="what-h" id="what-h-1">Отдать</h2>
 	<p class="what-text" id="what-text-1">Если у вас есть лишние книги, то самый простой способ их просто отдать. Вам они не нужны а кто то потом их почитает. Конечноже кто то может и вам книгу отдать. </p>
@@ -40,15 +41,34 @@
 </div>
 <div id="contacts">
 	<img id="logo-footer" src="logowhite.svg" alt="">
-	<button onclick="copy('phone')" id="phone"><u>+380 95 522 3540</u></button>
+	<p id="phone"><b>+380 95 522 3540</b></p>
+	<img id="phone-img" src="call 1phone-img.svg" alt="">
+	<img id="email-img" src="fluent_mail-24-filledmail.svg" alt="">
+	<div id="emailp">
+		<a id="email" target="_blank" href="https://mail.google.com/mail/u/0/#drafts?compose=new"><b>bookshareservise@gmail.com</b></a>
+	</div>
+
+	<p id="we-sotz"><b>Мы в соцсетях :</b></p>
+		<a target="_blank" href="https://www.instagram.com/book_share_inst/?hl=ru">
+			<div class="inst-img">
+				<img src="instagram 1instw.svg" class="inst" alt="">
+				<img class="img-top" src="instagram 1insth.svg" alt="">
+				<img class="img-top-2" src="instagram 1insta.svg" alt="">
+			</div>
+		</a>
+	
+	
+	
 
 	
 </div>
 <script>
-	function copy(id){
-		let copy = "esecsce"
-		copy.select()
-		document.execCommand("copy")
+
+	phone.onclick = () => {
+		navigator.clipboard.writeText("+380955223540")
+	}
+	emailp.onclick = () => {
+		navigator.clipboard.writeText("bookshareservise@gmail.com")
 	}
 	
 

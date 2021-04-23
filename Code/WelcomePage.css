@@ -9,7 +9,7 @@
 }
 @font-face {
     font-family: saria;
-    src: url(SairaSemiCondensed-SemiBold.ttf);
+    src: url(SairaSemiCondensed-Thin.ttf);
 }
 body{
     background-color: #F7F3F4;
@@ -213,21 +213,95 @@ body{
 }
 #logo-footer{
     position: absolute;
-    left: 40vw;
+    left: 43vw;
     width: 14vw;
     top: 4vh;
 }
 #phone{
     color: white;
     font-family: saria;
-    font-size: 1.9vh;
+    font-size: 1.8vh;
+    letter-spacing: 0.05vw;
+    position: absolute;
+    top: 2vh;
+    left: 22vw;
     transition-duration: 300ms;
     transition-property: color;
 
+}
+#phone-img{
+    width: 1.1vw;
+    position: absolute;
+    left: 20.5vw;
+    top: 4vh;
 }
 #phone:hover{
     color: #FA5C47;
 }
 #phone:active{
     color: #9E332E;
+}
+#what-h{
+    font-size: 1.8vw;
+    text-align: center;
+    top: 210vh;
+    left: 35vw;
+    position: absolute;
+    font-family: montserrat-regular;
+}
+#email-img{
+    width: 1.3vw;
+    position: absolute;
+    left: 20.3vw;
+    top: 8vh;
+}
+#email{
+    font-family: saria;
+    color: white;
+    font-size: 0.9vw;
+    position: absolute;
+    top: 7.8vh;
+    left: 22vw;
+    transition-duration: 300ms;
+    transition-property: color;
+}
+#email:hover{
+    color: #FA5C47;
+}
+#email:active{
+    color: #9E332E;
+}
+#we-sotz{
+    font-family: montserrat-regular ;
+    font-size: 1vw;
+    color: white;
+    position: absolute;
+    left: 70vw;
+    top: 1.5vh;
+}
+.inst-img{
+    position: relative;
+    display: inline-block;
+    top: 6.2vh;
+    left: 70vw;
+}
+.inst-img .img-top{
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: none;
+    z-index: 19;
+}
+.inst-img .img-top-2{
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: none;
+    z-index: 99;
+}
+.inst-img:hover .img-top{
+    display: inline;
+}
+.inst-img:active .img-top-2{
+    display: inline;
 }
