@@ -283,9 +283,11 @@ body{
     position: relative;
     display: inline-block;
     top: 6.2vh;
-    left: 70vw;
+    left: 69.7vw;
+    margin: 0.3vw;
 }
 .inst-img .img-top{
+    width: 2.15vw;
     top: 0;
     left: 0;
     position: absolute;
@@ -293,6 +295,7 @@ body{
     z-index: 19;
 }
 .inst-img .img-top-2{
+    width: 2.14vw;
     top: 0;
     left: 0;
     position: absolute;
@@ -304,4 +307,7 @@ body{
 }
 .inst-img:active .img-top-2{
     display: inline;
+}
+.inst{
+    width: 2.14vw;
 }
