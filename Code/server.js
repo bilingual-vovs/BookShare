@@ -1,8 +1,6 @@
-    const http = require('http')
-    const server =  http.createServer()
-    server.on('request', (req, res) => {
-        res.end('Helo')
-    })
-    server,listen(25565, () => {
-        console.log("Server has been started")
-    })
+const express = require('express')
+const webpush = require('web-push')
+const bodyParser = require('body-parser')
+const path = require('path')
+
+const app = express()
