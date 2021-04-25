@@ -1,11 +1,11 @@
 @font-face {
     font-family: montserrat-regular;
-    src: url(Montserrat-Regular.ttf); 
+    src: url(Montserrat-Regular.ttf);
 }
 @font-face {
     font-family: montserrat-m;
-    src: url(Montserrat-Thin.ttf); 
-    
+    src: url(Montserrat-Thin.ttf);
+
 }
 @font-face {
     font-family: saria;
@@ -23,34 +23,44 @@ body{
     top: 1.75vh;
 }
 #head_text1{
-    font-size: 1.9vh;
-    font-family: montserrat-regular;
-    /* transition-duration: 300ms;
-    transition-property: background-color; */
+    font-size: 1.1vw;
+    font-family : montserrat-regular;
+    transition-duration: 500ms;
     position: absolute;
     left: 39.84375vw;
-    top: 1.75vh;
+    top: 2.75vh;
 }
 
-   
-/* #head_text1:hover{
-    border-radius: 10px;
-    background-color: #CDCDCD;
-    
-} */
 #head_text2{
-    font-size: 1.9vh;
+    font-size: 1.1vw;
     font-family: montserrat-regular;
     position: absolute;
     left: 56vw;
-    top: 1.75vh;
+    top: 2.75vh;
 }
 #head_text3{
-    font-size: 1.9vh;
+    font-size: 1.1vw;
     font-family: montserrat-regular;
     position: absolute;
     left: 64vw;
-    top: 1.75vh;
+    top: 2.75vh;
+}
+#head_text1:hover {
+  color: #FA5C47;
+}
+#head_text1:hover #underline {
+  display: inline;
+}
+#underline{
+    transition-duration: 500ms;
+    background-color: black;
+    position: absolute;
+    height: 0.3vh;
+    width: 14.8vw;
+    top: 5.3vh;
+    left: 39.9vw;
+    display: none;
+    border-width: 0px;
 }
 
 #sign-up-button{
@@ -59,7 +69,7 @@ body{
     border: 0px;
     width: 10vw;
     height: 4.5vh;
-    font-size: 1.9vh;
+    font-size: 1.1vw;
     font-family: montserrat-regular;
     color: white;
     left: 75vw;
@@ -76,7 +86,7 @@ body{
 }
 #welcome-img{
     position: absolute;
-    width: 67vw;    
+    width: 67vw;
     left: 32vw;
     top: 14vh;
 }
@@ -156,7 +166,7 @@ body{
 #what-h-1{
     left: 32.5vw;
     top: 227vh;
-}   
+}
 .what-h{
     font-size: 1.7vw;
     z-index: 1;
