@@ -11,6 +11,9 @@
     font-family: saria;
     src: url(SairaSemiCondensed-Thin.ttf);
 }
+* {
+  transition-duration: 500ms;
+}
 body{
     background-color: #F7F3F4;
     height: 174,166666667vh;
@@ -24,6 +27,8 @@ body{
 }
 #head_text1{
     font-size: 1.1vw;
+    color: black;
+    text-decoration: none;
     font-family : montserrat-regular;
     transition-duration: 500ms;
     position: absolute;
@@ -32,36 +37,47 @@ body{
 }
 
 #head_text2{
+  text-decoration: none;
+  transition-duration: 500ms;
     font-size: 1.1vw;
     font-family: montserrat-regular;
     position: absolute;
     left: 56vw;
     top: 2.75vh;
+    color: black;
 }
 #head_text3{
+  transition-duration: 500ms;
+  text-decoration: none;
     font-size: 1.1vw;
     font-family: montserrat-regular;
     position: absolute;
     left: 64vw;
     top: 2.75vh;
+    color: black;
 }
 #head_text1:hover {
   color: #FA5C47;
+
 }
-#head_text1:hover #underline {
-  display: inline;
+#head_text1:active {
+  color: #9E332E;
 }
-#underline{
-    transition-duration: 500ms;
-    background-color: black;
-    position: absolute;
-    height: 0.3vh;
-    width: 14.8vw;
-    top: 5.3vh;
-    left: 39.9vw;
-    display: none;
-    border-width: 0px;
+#head_text2:hover {
+  color: #FA5C47;
+
 }
+#head_text2:active {
+  color: #9E332E;
+}
+#head_text3:hover {
+  color: #FA5C47;
+
+}
+#head_text3:active {
+  color: #9E332E;
+}
+
 
 #sign-up-button{
     background-color: #FA7269;
@@ -91,7 +107,7 @@ body{
     top: 14vh;
 }
 #welcome_text{
-    font-size: 7vh;
+    font-size: 4vw;
     font-family: montserrat-m;
     position: absolute;
     left: 20vw;
