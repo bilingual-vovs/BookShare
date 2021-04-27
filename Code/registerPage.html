@@ -20,9 +20,19 @@
   </div>
 
 	<div id="reg-form">
-		<a>Регистрация</a>
-		<canvas id="canvas" width="2" height="22"></canvas>
-		<a>Авториация</a>
+		<a class="avt"><b>Регистрация</b></a>
+		<canvas id="canvas"></canvas>
+		<a id="sign-in" class="avt"><b>Авториация</b></a>
+		<div id="form">
+					<form method="post">
+							<input id="email" class="inputs" type="email" name="email" value="" placeholder="   Введите почту">
+							<br>
+							<input class="inputs" type="text" name="name" value="" placeholder="   Введите имя">
+							<br>
+							<b><input class="inputs" type="password" name="pass" value="" placeholder="   Введите пароль"></b>
+							<button type="submit" name="button">Зарегестрироватся</button>
+					</form>
+		</div>
 
 	</div>
 </body>
