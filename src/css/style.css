@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f3f4;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1172px;
+}
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 18px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
