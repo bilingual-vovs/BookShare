@@ -107,10 +107,13 @@ body{
   height: 3vh;
   position: relative;
   top: 0.6vh;
-  margin-left: 0.25vw;
-  margin-right: 0.25vw;
+  left: -0.5vw
 }
 .avt{
+  background-color: rgba(255, 0, 0, 0);
+  border: none;
+  left: -0.56vw;
+  position: relative;
   font-family: montserrat;
   font-size: 2.5vh;
   margin: 0.3vw;
@@ -119,9 +122,6 @@ body{
   position: relative;
   top: 27vh;
   left: 25vw
-}
-#sign-in{
-  color: #7E7E7E;
 }
 
 #form{
@@ -306,5 +306,5 @@ body{
 #readGirl{
   position: absolute;
   width: 50vw;
-  height: 60vh  
+  height: 60vh
 }

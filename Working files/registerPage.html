@@ -26,9 +26,9 @@
 
 
 	<div id="reg-form">
-		<a class="avt"><b>Регистрация</b></a>
+		<button style="color: black" id="sign-in" class="avt"><b>Регистрация</b></button>
 		<canvas id="canvas"></canvas>
-		<a id="sign-in" class="avt"><b>Авториация</b></a>
+		<button style="color: #7E7E7E" id="sign-up" onclick="autofunk()" class="avt"><b>Авториация</b></button>
 		<div id="form">
 					<form method="post">
 							<input id="email-in" class="inputs" type="email" name="email" value="" placeholder="   Введите почту">
@@ -116,6 +116,12 @@
 			setTimeout(function () {
 				$("#readGirl").attr("style", 'top: 40vh; left: 47vw;')
 			},100)
+
+
+			function autofunk() {
+					$('#sign-up').attr('style', 'color: black;')
+					$('#sign-in').attr('style', 'color: #7E7E7E;')
+			}
 	</script>
 </body>
 </html>
