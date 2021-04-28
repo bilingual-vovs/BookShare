@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>BookShare</title>
+
+    <link href="WelcomePage.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
+</head>
+<body>
+<div id="head">
+	<img id="logo" src="logoLogo.png" alt="">
+	<a href="#what-h" id="head_text1">ЧТО ТАКОЕ BOOKSHARE?</a>
+	<a href="#contacts" id="head_text2">КОНТАКТЫ</a>
+	<a href="registerPage.html" id="head_text3">АВТОРИЗАЦИЯ</a>
+	<form class="" action="registerPage.html" method="post">
+			<button id="sign-up-button">РЕГИСТРАЦИЯ</button>
+	</form>
+</div>
+<div id="welcome">
+	<img id="welcome-img" src="resoursphoto1.svg" alt="">
+	<h1 id="welcome_text">Добро пожаловать</h1>
+	<img id="welcome_logo" src="BookShareLogo2.png" alt="">
+	<p id="phraze">Сохрани природу, делись книгами!</p>
+	<form class="" action="registerPage.html" method="post">
+			<button id="get-started"><b>Начать</b></button>
+	</form>
+
+</div>
+<div id="int_video">
+	<video id="video" autoplay width="400" height="300" preload="auto" controls="controls">
+		<source type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' src="Time-Lapse_ Watch Flowers Bloom Before Your Eyes _ Short Film Showcase.mp4">
+	</video>
+	<h2 id="int-img">Делись книгами, не выбрасывай их</h2>
+</div>
+<div>
+	<h1 id="what-h">Что можно зделать с книгами?</h1>
+	<img id="img-2" src="Resim2.svg" alt="">
+	<h2 class="what-h" id="what-h-1">Отдать</h2>
+	<p class="what-text" id="what-text-1">Если у вас есть лишние книги, то самый простой способ их просто отдать. Вам они не нужны а кто то потом их почитает. Конечноже кто то может и вам книгу отдать. </p>
+	<h2 class="what-h" id="what-h-2">Обменять</h2>
+	<p class="what-text" id="what-text-2">У кого то есть книга, но просто так он ее не отдает?   Предложите ему взамен свою и некаких денег!  Также вы можете выставить свою книгу только для обмена. </p>
+	<h1 class="what-h" id="what-h-3">Дать почитать</h1>
+	<p class="what-text" id="what-text-3">На полке пылится ненужная книга и вы хотите что бы кто то еще ее прочел, но не хотите ее отдавать на совсем? Так дайте почетать другому человеку. Он вам потом вернет.  Вы остались с книгой, а человек прочитал интересную историю</p>
+	<h1 class="what-h" id="what-h-4">Сдать на мукулатуру</h1>
+	<p class="what-text" id="what-text-4">Книга вам уже не нужна и она в таком состояние что никому не отдашь? Здайте ее на мукулатуру в один из центров приема BookShare. </p>
+</div>
+<div id="contacts">
+	<img id="logo-footer" src="logowhite.svg" alt="">
+	<p id="phone"><b>+380 95 522 3540</b></p>
+	<img id="phone-img" src="call 1phone-img.svg" alt="">
+	<img id="email-img" src="fluent_mail-24-filledmail.svg" alt="">
+	<div id="emailp">
+		<a id="email" target="_blank" href="https://mail.google.com/mail/u/0/#drafts?compose=new"><b>bookshareservise@gmail.com</b></a>
+	</div>
+
+	<p id="we-sotz"><b>Мы в соцсетях :</b></p>
+		<a class="link" target="_blank" href="https://www.instagram.com/book_share_inst/?hl=ru">
+			<div class="inst-img">
+				<img src="instagram 1instw.svg" class="inst" alt="">
+				<img class="img-top" src="instagram 1insth.svg" alt="">
+				<img class="img-top-2" src="instagram 1insta.svg" alt="">
+			</div>
+		</a>
+		<a class="link" target="_blank" href="https://www.youtube.com/channel/UCPSlaCA8G6QHhjPamRfy9TQ">
+			<div class="inst-img">
+				<img src="youtube 1youw.svg" class="inst" alt="">
+				<img class="img-top" src="youtube 1youh.svg" alt="">
+				<img class="img-top-2" src="youtube 1youa.svg" alt="">
+			</div>
+		</a>
+		<a class="link" target="_blank" href="https://www.facebook.com/groups/285968679734831/">
+			<div class="inst-img">
+				<img src="facebook 1facew.svg" class="inst" alt="">
+				<img class="img-top" src="facebook 1faceh.svg" alt="">
+				<img class="img-top-2" src="facebook 1facea.svg" alt="">
+			</div>
+		</a>
+</div>
+<script>
+
+	phone.onclick = () => {
+		navigator.clipboard.writeText("+380955223540")
+	}
+	emailp.onclick = () => {
+		navigator.clipboard.writeText("bookshareservise@gmail.com")
+	}
+	// test
+
+
+</script>
+</body>
+</html>

@@ -8,17 +8,22 @@
 	<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
 </head>
 <body>
-  <div id="head">
+	<img id="blue" src="Ellipse 3elipse.svg" alt="">
+	<img style="top: 35vh; left: 80vw;" id="cloud-1" src="Vectorclouds.svg" alt="">
+	<img style="top: 38vh; left: 85vw;" id="cloud-2" src="Vectorclouds-1.svg" alt="">
+	<img style="top: 55vh; left: 85vw;" id="cloud-3" src="Vectorclouds-2.svg" alt="">
+	<img style="top: 40vh; left: 57vw;" id="readGirl" src="readGirl.svg" alt="">
+	<div id="head">
   	<img id="logo" src="logoLogo.png" alt="">
   	<a href="WelcomePage.html#what-h" id="head_text1">ЧТО ТАКОЕ BOOKSHARE?</a>
-  	<a href="WelcomePage.html#contacts" id="head_text2">КОНТАКТЫ</a>
+  	<a href="#contacts" id="head_text2">КОНТАКТЫ</a>
   	<a  id="head_text3">АВТОРИЗАЦИЯ</a>
 		<form action="registerPage.html" method="post">
 			<button id="sign-up-button">РЕГИСТРАЦИЯ</button>
 		</form>
 
   </div>
-	
+
 
 	<div id="reg-form">
 		<a class="avt"><b>Регистрация</b></a>
@@ -26,15 +31,91 @@
 		<a id="sign-in" class="avt"><b>Авториация</b></a>
 		<div id="form">
 					<form method="post">
-							<input id="email" class="inputs" type="email" name="email" value="" placeholder="   Введите почту">
+							<input id="email-in" class="inputs" type="email" name="email" value="" placeholder="   Введите почту">
 							<br>
 							<input class="inputs" type="text" name="name" value="" placeholder="   Введите имя">
 							<br>
 							<b><input class="inputs" type="password" name="pass" value="" placeholder="   Введите пароль"></b>
-							<button id="" type="submit" name="button">Зарегестрироватся</button>
+							<button id="submit" type="submit" name="button">ЗАРЕГИСТРИРОВАТСЯ</button>
 					</form>
 		</div>
-
 	</div>
+
+
+	<div id="contacts">
+		<img id="logo-footer" src="logowhite.svg" alt="">
+		<p id="phone"><b>+380 95 522 3540</b></p>
+		<img id="phone-img" src="call 1phone-img.svg" alt="">
+		<img id="email-img" src="fluent_mail-24-filledmail.svg" alt="">
+		<div id="emailp">
+			<a id="email" target="_blank" href="https://mail.google.com/mail/u/0/#drafts?compose=new"><b>bookshareservise@gmail.com</b></a>
+		</div>
+
+		<p id="we-sotz"><b>Мы в соцсетях :</b></p>
+			<a class="link" target="_blank" href="https://www.instagram.com/book_share_inst/?hl=ru">
+				<div class="inst-img">
+					<img src="instagram 1instw.svg" class="inst" alt="">
+					<img class="img-top" src="instagram 1insth.svg" alt="">
+					<img class="img-top-2" src="instagram 1insta.svg" alt="">
+				</div>
+			</a>
+			<a class="link" target="_blank" href="https://www.youtube.com/channel/UCPSlaCA8G6QHhjPamRfy9TQ">
+				<div class="inst-img">
+					<img src="youtube 1youw.svg" class="inst" alt="">
+					<img class="img-top" src="youtube 1youh.svg" alt="">
+					<img class="img-top-2" src="youtube 1youa.svg" alt="">
+				</div>
+			</a>
+			<a class="link" target="_blank" href="https://www.facebook.com/groups/285968679734831/">
+				<div class="inst-img">
+					<img src="facebook 1facew.svg" class="inst" alt="">
+					<img class="img-top" src="facebook 1faceh.svg" alt="">
+					<img class="img-top-2" src="facebook 1facea.svg" alt="">
+				</div>
+			</a>
+	</div>
+
+	<script type="text/javascript">
+			setTimeout(function () {
+				$("#cloud-1").attr('style', 'top: 35vh; left: 70vw;')
+			})
+			setTimeout(function () {
+				$("#cloud-1").attr('style', 'top: 35vh; left: 65vw;')
+			}, 100)
+			setTimeout(function () {
+				$("#cloud-1").attr('style', 'top: 35vh; left: 60vw;')
+			}, 200)
+			setTimeout(function () {
+				$("#cloud-1").attr('style', 'top: 35vh; left: 55vw;')
+			}, 300)
+			setTimeout(function () {
+				$("#cloud-2").attr('style', 'top: 38vh; left: 80vw;')
+			})
+			setTimeout(function () {
+				$("#cloud-3").attr('style', 'top: 55vh; left: 75vw;')
+			}, 100)
+			setTimeout(function () {
+				$("#cloud-3").attr('style', 'top: 55vh; left: 70vw;')
+			}, 200)
+			setTimeout(function () {
+				$("#cloud-3").attr('style', 'top: 55vh; left: 65vw;')
+			}, 300)
+			setTimeout(function () {
+				$("#cloud-3").attr('style', 'top: 55vh; left: 60vw;')
+			}, 400)
+			setTimeout(function () {
+				$("#cloud-3").attr('style', 'top: 55vh; left: 55vw;')
+			}, 500)
+			setTimeout(function () {
+				$("#cloud-3").attr('style', 'top: 55vh; left: 52vw;')
+			}, 600)
+
+			setTimeout(function () {
+				$("#readGirl").attr("style", 'top: 40vh; left: 52vw;')
+			})
+			setTimeout(function () {
+				$("#readGirl").attr("style", 'top: 40vh; left: 47vw;')
+			},100)
+	</script>
 </body>
 </html>
