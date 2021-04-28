@@ -1,0 +1,148 @@
+@font-face {
+    font-family: montserrat-regular;
+    src: url(Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: montserrat-m;
+    src: url(Montserrat-Thin.ttf);
+
+}
+@font-face {
+    font-family: saria;
+    src: url(SairaSemiCondensed-Thin.ttf);
+}
+* {
+  transition-duration: 500ms;
+}
+body{
+    background-color: #F7F3F4;
+    height: 174,166666667vh;
+    width: 100vh;
+}
+#logo {
+    width: 18.5vh;
+    position: absolute;
+    left: 20vw;
+    top: 1.75vh;
+}
+#head_text1{
+    font-size: 1.1vw;
+    color: black;
+    text-decoration: none;
+    font-family : montserrat-regular;
+    transition-duration: 500ms;
+    position: absolute;
+    left: 39.84375vw;
+    top: 2.75vh;
+}
+
+#head_text2{
+  text-decoration: none;
+  transition-duration: 500ms;
+    font-size: 1.1vw;
+    font-family: montserrat-regular;
+    position: absolute;
+    left: 56vw;
+    top: 2.75vh;
+    color: black;
+}
+#head_text3{
+  transition-duration: 500ms;
+  text-decoration: none;
+    font-size: 1.1vw;
+    font-family: montserrat-regular;
+    position: absolute;
+    left: 64vw;
+    top: 2.75vh;
+    color: black;
+}
+#head_text1:hover {
+  color: #FA5C47;
+
+}
+#head_text1:active {
+  color: #9E332E;
+}
+#head_text2:hover {
+  color: #FA5C47;
+
+}
+#head_text2:active {
+  color: #9E332E;
+}
+#head_text3:hover {
+  color: #FA5C47;
+
+}
+#head_text3:active {
+  color: #9E332E;
+}
+
+
+#sign-up-button{
+    background-color: #FA7269;
+    position: absolute;
+    border: 0px;
+    width: 11vw;
+    height: 4.5vh;
+    font-size: 1.1vw;
+    font-family: montserrat-regular;
+    color: white;
+    left: 75vw;
+    top: 1.75vh;
+    transition-duration: 300ms;
+    transition-property: background-color;
+
+}
+#sign-up-button:hover{
+    background-color: #FA5C47;
+}
+#sign-up-button:active{
+    background-color: #9E332E;
+}
+
+#canvas{
+  background-color: #E6E6E6;
+  width: 0.1vw;
+  height: 3vh;
+  position: relative;
+  top: 0.6vh;
+}
+.avt{
+  font-family: montserrat;
+  font-size: 2.5vh;
+  margin: 0.3vw
+}
+#reg-form{
+  position: relative;
+  top: 27vh;
+  left: 25vw
+}
+#sign-in{
+  color: #7E7E7E;
+}
+
+#form{
+  background-color: #BED2FA;
+  border-radius: .8vh;
+  align-items: center;
+  position: relative;
+  width: 21.5vw;
+  top: 1vh;
+  left: -1vw;
+  height: 40vh;
+}
+.inputs{
+  border: none;
+  margin: 2vh 2vw 1vh 2.5vw;
+  height: 5vh;
+  width: 16vw;
+  font-size: 1.7vh;
+  font-weight: 550;
+  font-family: Montserrat;
+  border-radius: 0px;
+
+}
+#email{
+  margin-top: 5vh
+}
