@@ -17,11 +17,8 @@
   	<img id="logo" src="logoLogo.png" alt="">
   	<a href="WelcomePage.html#what-h" id="head_text1">ЧТО ТАКОЕ BOOKSHARE?</a>
   	<a href="#contacts" id="head_text2">КОНТАКТЫ</a>
-  	<a  id="head_text3">АВТОРИЗАЦИЯ</a>
-		<form action="registerPage.html" method="post">
-			<button id="sign-up-button">РЕГИСТРАЦИЯ</button>
-		</form>
-
+  	<a onclick="autofunk()" id="head_text3">АВТОРИЗАЦИЯ</a>
+		<button onclick="regfunk()" id="sign-up-button">РЕГИСТРАЦИЯ</button>
   </div>
 
 
@@ -190,7 +187,20 @@
 						$("#readBoy").attr("style", 'top: 40vh; left: 47vw; display: block;')
 					},100)
 			}
-			regfunk()
+			let num = 1
+			let idr = window.location.search
+			if (idr == "?reg"){
+				num = 1
+			}
+			else if (idr == "?aut") {
+				num = 2
+			}
+			if (num == 1){
+				regfunk()
+			}
+			else if (num == 2) {
+				autofunk()
+			}
 	</script>
 </body>
 </html>
