@@ -8,11 +8,11 @@
 	<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
 </head>
 <body>
-	<img id="blue" src="Ellipse 3elipse.svg" alt="">
-	<img style="top: 35vh; left: 80vw;" id="cloud-1" src="Vectorclouds.svg" alt="">
-	<img style="top: 38vh; left: 85vw;" id="cloud-2" src="Vectorclouds-1.svg" alt="">
-	<img style="top: 55vh; left: 85vw;" id="cloud-3" src="Vectorclouds-2.svg" alt="">
-	<img style="top: 40vh; left: 57vw;" id="readGirl" src="readGirl.svg" alt="">
+	<div id="anim">
+			<img id="blue" src="Ellipse 3elipse.svg" alt="">
+
+
+	</div>
 	<div id="head">
   	<img id="logo" src="logoLogo.png" alt="">
   	<a href="WelcomePage.html#what-h" id="head_text1">ЧТО ТАКОЕ BOOKSHARE?</a>
@@ -26,16 +26,20 @@
 
 
 	<div id="reg-form">
-		<button style="color: black" id="sign-in" class="avt"><b>Регистрация</b></button>
+		<button onclick="regfunk()" style="color: black" id="sign-in" class="avt"><b>Регистрация</b></button>
 		<canvas id="canvas"></canvas>
-		<button style="color: #7E7E7E" id="sign-up" onclick="autofunk()" class="avt"><b>Авториация</b></button>
-		<div id="form">
+		<button style="color: #7E7E7E" id="sign-up" onclick="autofunk()" class="avt"><b>Авторизация</b></button>
+		<div style="" id="form">
 					<form method="post">
-							<input id="email-in" class="inputs" type="email" name="email" value="" placeholder="   Введите почту">
+						<h1 style="display: none;" id="aut-h">Авторизация</h1>
+							<img style="" id="email-log" src="Component 1email.svg" alt="">
+							<input style="" id="email-in" class="inputs" type="email" name="email" value="" placeholder="   Введите почту">
 							<br>
-							<input class="inputs" type="text" name="name" value="" placeholder="   Введите имя">
+							<img style="display: inline;" id="name-log" src="Component 1name.svg" alt="">
+							<input id="name-in" style="display: inline;" class="inputs" type="text" name="name" value="" placeholder="   Введите имя">
 							<br>
-							<b><input class="inputs" type="password" name="pass" value="" placeholder="   Введите пароль"></b>
+							<img id="pass-log" style="" src="Component 1pass.svg" alt="">
+							<input id="pass-in" style="" class="inputs" type="password" name="pass" value="" placeholder="   Введите пароль">
 							<button id="submit" type="submit" name="button">ЗАРЕГИСТРИРОВАТСЯ</button>
 					</form>
 		</div>
@@ -74,54 +78,119 @@
 				</div>
 			</a>
 	</div>
-
 	<script type="text/javascript">
-			setTimeout(function () {
-				$("#cloud-1").attr('style', 'top: 35vh; left: 70vw;')
-			})
-			setTimeout(function () {
-				$("#cloud-1").attr('style', 'top: 35vh; left: 65vw;')
-			}, 100)
-			setTimeout(function () {
-				$("#cloud-1").attr('style', 'top: 35vh; left: 60vw;')
-			}, 200)
-			setTimeout(function () {
-				$("#cloud-1").attr('style', 'top: 35vh; left: 55vw;')
-			}, 300)
-			setTimeout(function () {
-				$("#cloud-2").attr('style', 'top: 38vh; left: 80vw;')
-			})
-			setTimeout(function () {
-				$("#cloud-3").attr('style', 'top: 55vh; left: 75vw;')
-			}, 100)
-			setTimeout(function () {
-				$("#cloud-3").attr('style', 'top: 55vh; left: 70vw;')
-			}, 200)
-			setTimeout(function () {
-				$("#cloud-3").attr('style', 'top: 55vh; left: 65vw;')
-			}, 300)
-			setTimeout(function () {
-				$("#cloud-3").attr('style', 'top: 55vh; left: 60vw;')
-			}, 400)
-			setTimeout(function () {
-				$("#cloud-3").attr('style', 'top: 55vh; left: 55vw;')
-			}, 500)
-			setTimeout(function () {
-				$("#cloud-3").attr('style', 'top: 55vh; left: 52vw;')
-			}, 600)
 
-			setTimeout(function () {
-				$("#readGirl").attr("style", 'top: 40vh; left: 52vw;')
-			})
-			setTimeout(function () {
-				$("#readGirl").attr("style", 'top: 40vh; left: 47vw;')
-			},100)
+			function regfunk() {
+				$('#submit').text('ЗАРЕГИСТРИРОВАТСЯ')
+				$('#email-log').attr('style', '')
+				$('#pass-log').attr('style', '')
+				$('#name-log').attr('style', "")
+				$('#aut-h').attr('style', 'display: none;')
+				$('#name-in').attr('style', '')
+				$('#form').attr('style', '')
+				$('#email-in').attr('style', '')
+				$('#pass-in').attr('style', '')
+				$('#form').attr('style', '')
+				$('#email-in').attr('style', '')
+				$('#pass-in').attr('style', '')
+				$("#readBoy").remove()
+				$("#cloud-4").remove()
+				$("#cloud-5").remove()
+				$("#readGirl").remove()
+				$("#cloud-1").remove()
+				$("#cloud-2").remove()
+				$("#cloud-3").remove()
+					$('#anim').append('<img style="top: 35vh; left: 80vw; display: block;" id="cloud-1" src="Vectorclouds.svg" alt=""><img style="top: 38vh; left: 85vw; display: block;" id="cloud-2" src="Vectorclouds-1.svg" alt=""><img style="top: 55vh; left: 85vw; display: block;" id="cloud-3" src="Vectorclouds-2.svg" alt=""><img style="top: 40vh; left: 57vw; display: block;" id="readGirl" src="readGirl.svg" alt="">')
+					$('#sign-up').attr('style', 'color: #7E7E7E;')
+					$('#sign-in').attr('style', 'color: black;')
+					setTimeout(function () {
+						$("#cloud-1").attr('style', 'top: 35vh; left: 70vw; display: block;')
+					})
+					setTimeout(function () {
+						$("#cloud-1").attr('style', 'top: 35vh; left: 65vw; display: block;')
+					}, 100)
+					setTimeout(function () {
+						$("#cloud-1").attr('style', 'top: 35vh; left: 60vw; display: block;')
+					}, 200)
+					setTimeout(function () {
+						$("#cloud-1").attr('style', 'top: 35vh; left: 55vw; display: block;')
+					}, 300)
+					setTimeout(function () {
+						$("#cloud-2").attr('style', 'top: 38vh; left: 80vw; display: block;')
+					})
+					setTimeout(function () {
+						$("#cloud-3").attr('style', 'top: 55vh; left: 75vw; display: block;')
+					}, 100)
+					setTimeout(function () {
+						$("#cloud-3").attr('style', 'top: 55vh; left: 70vw; display: block;')
+					}, 200)
+					setTimeout(function () {
+						$("#cloud-3").attr('style', 'top: 55vh; left: 65vw; display: block;')
+					}, 300)
+					setTimeout(function () {
+						$("#cloud-3").attr('style', 'top: 55vh; left: 60vw; display: block;')
+					}, 400)
+					setTimeout(function () {
+						$("#cloud-3").attr('style', 'top: 55vh; left: 55vw; display: block;')
+					}, 500)
+					setTimeout(function () {
+						$("#cloud-3").attr('style', 'top: 55vh; left: 52vw; display: block;')
+					}, 600)
+
+					setTimeout(function () {
+						$("#readGirl").attr("style", 'top: 40vh; left: 52vw; display: block;')
+					})
+					setTimeout(function () {
+						$("#readGirl").attr("style", 'top: 40vh; left: 47vw; display: block;')
+					},100)
+		}
 
 
 			function autofunk() {
+				$('#submit').text('АВТОРИЗОВАТСЯ')
+				$('#email-log').attr('style', 'top: 13.2vh')
+				$('#pass-log').attr('style', 'top: 21.5vh')
+				$('#name-log').attr('style', "display: none;")
+				$('#aut-h').attr('style', 'top: 4vh; display: inline;')
+				$('#name-in').attr('style', 'display: none;')
+				$('#form').attr('style', 'height: 38vh; background-color: white;')
+				$('#email-in').attr('style', 'top: 2vh; background-color: #ECF3FF;')
+				$('#pass-in').attr('style', 'background-color: #ECF3FF;')
+				$("#readBoy").remove()
+				$("#cloud-4").remove()
+				$("#cloud-5").remove()
 					$('#sign-up').attr('style', 'color: black;')
 					$('#sign-in').attr('style', 'color: #7E7E7E;')
+					$('#anim').append('<img id="cloud-4" style="top: 35vh; left: 80vw; display: block;" src="Vectorclouds-1.svg" alt=""><img id="cloud-5" style="top: 38vh; left: 85vw; display: block;" src="Vectorclouds-1.svg" alt=""><img id="readBoy" style="top: 40vh; left: 57vw; display: block;" src="readBoy.svg" alt="">')
+						$("#readGirl").remove()
+						$("#cloud-1").remove()
+						$("#cloud-2").remove()
+						$("#cloud-3").remove()
+					setTimeout(function () {
+						$("#cloud-4").attr('style', 'top: 35vh; left: 70vw; display: block;')
+					})
+					setTimeout(function () {
+						$("#cloud-4").attr('style', 'top: 35vh; left: 65vw; display: block;')
+					}, 100)
+					setTimeout(function () {
+						$("#cloud-4").attr('style', 'top: 35vh; left: 60vw; display: block;')
+					}, 200)
+					setTimeout(function () {
+						$("#cloud-4").attr('style', 'top: 35vh; left: 55vw; display: block;')
+					}, 300)
+					setTimeout(function () {
+						$("#cloud-5").attr('style', 'top: 38vh; left: 80vw; display: block;')
+					})
+
+
+					setTimeout(function () {
+						$("#readBoy").attr("style", 'top: 40vh; left: 52vw; display: block;')
+					})
+					setTimeout(function () {
+						$("#readBoy").attr("style", 'top: 40vh; left: 47vw; display: block;')
+					},100)
 			}
+			regfunk()
 	</script>
 </body>
 </html>

@@ -110,6 +110,7 @@ body{
   left: -0.5vw
 }
 .avt{
+  transition-duration: 200ms;
   background-color: rgba(255, 0, 0, 0);
   border: none;
   left: -0.56vw;
@@ -124,6 +125,11 @@ body{
   left: 25vw
 }
 
+#aut-h{
+  font-size: 2vw;
+  font-family: Montserrat;
+}
+
 #form{
   background-color: #BED2FA;
   border-radius: .8vh;
@@ -133,6 +139,11 @@ body{
   top: 3vh;
   left: -1vw;
   height: 40vh;
+}
+#aut-h{
+  position: relative;
+  top: 2vh;
+  left: 3.3vw;
 }
 .inputs{
   border: none;
@@ -147,6 +158,7 @@ body{
 
 }
 #email-in{
+  position: relative;
   margin-top: 5vh
 }
 
@@ -286,6 +298,25 @@ body{
     width: 2.14vw;
 }
 
+#email-log{
+  z-index: 1;
+  position: absolute;
+  top: 6.45vh;
+  left: 16.5vw;
+  width: 1.2vw;
+}
+#name-log{
+  position: absolute;
+  top: 14.75vh;
+  left: 16.5vw;
+  width: 1.2vw;
+}
+#pass-log{
+  position: absolute;
+  top: 22.8vh;
+  left: 16.5vw;
+  width: 1.2vw;
+}
 
 #cloud-1{
   position: absolute;
@@ -301,6 +332,22 @@ body{
   position: absolute;
   width: 6vw;
   height: 10vh;
+}
+#cloud-4{
+  z-index: 1;
+  position: absolute;
+  width: 12vw;
+  height: 17vh;
+}
+#cloud-5{
+  position: absolute;
+  width: 10vw;
+  height: 15vh;
+}
+#readBoy{
+  position: absolute;
+  width: 50vw;
+  height: 60vh;
 }
 
 #readGirl{
