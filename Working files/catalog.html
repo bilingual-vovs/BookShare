@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>BookShare</title>
+
+    <link href="catalog.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
+</head>
+<body>
+	<div class="header">
+			<img class="logo-head" src="logoLogo.png" alt="">
+			<input placeholder=" Поиск книги по названию или автору" class='search' type="text" name="search" value="">
+			<img class="serch-img" src="ant-design_search-outlinedsearch.svg" alt="">
+			<p class="rate">Рейтинг : <b>5</b></p>
+			<img class="avtr" src="read.svg" alt="">
+	</div>
+	<div class="filt">
+		<p class="cat-text">Категории</p>
+		<div class="zhan">
+			<p class="p-filt">Жанры</p>
+			<img style="transform: rotate(0);" id="i-zh" src="dashicons_arrow-downtriangle.svg" alt="">
+		</div>
+		<div style="display: none;" class="zhan">
+			<p class="p-filt">Боевики</p>
+		</div>
+		<div style="display: none;" class="zhan">
+			<p class="p-filt">Детективы</p>
+		</div>
+		<div style="display: none;" class="zhan">
+			<p class="p-filt">Романы</p>
+		</div>
+		<div style="display: none;" class="zhan">
+			<p class="p-filt">Комедии</p>
+		</div>
+		<div style="display: none;" class="zhan">
+			<p class="p-filt">Трагедии</p>
+		</div>
+		<div style="display: none;" class="zhan">
+			<p class="p-filt">Драма</p>
+		</div>
+		<div style="display: none;" class="zhan">
+			<p class="p-filt">Мелодрама</p>
+		</div>
+	</div>
+	<script type="text/javascript">
+	var st = document.documentElement
+		let cat = {
+			genre: {
+				thriller: false,
+				detective: false,
+				romans: false,
+				comedi: false,
+				tragedi: false,
+				drams: false,
+				melodrams: false
+			}
+		}
+
+		$('#i-zh').click(function () {
+			$('.zhan').attr('style', "")
+			$('#i-zh').attr('style', "transform: rotate(180);")
+		})
+	</script>
+</body>
+</html>

@@ -244,6 +244,7 @@ body{
     top: 4vh;
 }
 #phone{
+    cursor: pointer;
     color: white;
     font-family: saria;
     font-size: 1.8vh;

@@ -1,0 +1,111 @@
+@font-face {
+    font-family: montserrat-regular;
+    src: url(Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: montserrat-m;
+    src: url(Montserrat-Thin.ttf);
+
+}
+@font-face {
+    font-family: saria;
+    src: url(SairaSemiCondensed-Thin.ttf);
+}
+* {
+  transition-duration: 500ms;
+}
+body{
+    background-color: #F7F3F4;
+}
+.header{
+  background-color: white;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 9vh;
+}
+.logo-head{
+  width: 10vw;
+  position: relative;
+  left: 20vw;
+  top: 2vh;
+}
+.search{
+  border-radius: 0px;
+  border-width: 0.1px;
+  position: relative;
+  left: 26vw;
+  width: 19vw;
+  top: 0.5vh;
+  font-family: Montserrat;
+  font-weight: 500;
+  height: 3.5vh;
+  font-size: 0.85vw;
+}
+
+.serch-img{
+  position: relative;
+  width: 1.7vw;
+  left: 23.58vw;
+  top: 1.5vh;
+}
+
+.rate{
+  font-family: Montserrat;
+  font-size: 1.2vw;
+  color: green;
+  position: relative;
+  top: -5.2vh;
+  left: 72vw;
+}
+
+.avtr{
+  border-style: solid;
+  position: relative;
+  height: 5vh;
+  border-radius: 50%;
+  border-color: green;
+  border-width: 0.3vh;
+  top: -11.9vh;
+  left: 80vw;
+}
+
+.filt{
+  position: fixed;
+  background-color: #6D89CF;
+  top: 15vh;
+  left: 20vw;
+}
+.cat-text{
+  font-family: Montserrat;
+  font-weight: 600;
+  color: white;
+  font-size: 1.5vw;
+  margin: 3vh 9vw 1vh 1vw;
+}
+.zhan{
+  font-family: Montserrat;
+  font-weight: 600;
+  color: white;
+  background-color: #BED2FA;
+  font-size: 1vw;
+  display: flex;
+  margin: 1vh 1vw 1vh 1vw;
+}
+.zhan:hover{
+  background-color: #89B0FF;
+}
+
+.p-filt{
+  margin-top: 1vh;
+  padding-left: 1vw;
+  margin-bottom: 1vh;
+}
+#i-zh{
+  padding-left: 9.5vw;
+}
+.chek-filt{
+  width: 1vw;
+  margin-top: 1.8vh;
+}
