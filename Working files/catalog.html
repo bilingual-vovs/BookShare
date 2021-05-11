@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div class="header">
-			<img class="logo-head" src="logoLogo.png" alt="">
+			<img class="logo-head" src="logologo.svg" alt="">
 			<input placeholder=" Поиск книги по названию или автору" class='search' type="text" name="search" value="">
 			<img class="serch-img" src="ant-design_search-outlinedsearch.svg" alt="">
 			<p class="rate">Рейтинг : <b>5</b></p>
@@ -17,34 +17,40 @@
 	</div>
 	<div class="filt">
 		<p class="cat-text">Категории</p>
-		<div class="zhan">
+		<div id="d-zh" class="zhan-host">
 			<p class="p-filt">Жанры</p>
-			<img style="transform: rotate(0);" id="i-zh" src="dashicons_arrow-downtriangle.svg" alt="">
+			<img style="transform: rotate(0deg);" id="i-zh" src="dashicons_arrow-downtriangle.svg" alt="">
 		</div>
-		<div style="display: none;" class="zhan">
+		<div id="thriller" style="display: none;" class="zhan">
 			<p class="p-filt">Боевики</p>
 		</div>
-		<div style="display: none;" class="zhan">
+		<div id="detective" style="display: none;" class="zhan">
 			<p class="p-filt">Детективы</p>
 		</div>
-		<div style="display: none;" class="zhan">
+		<div id="romans" style="display: none;" class="zhan">
 			<p class="p-filt">Романы</p>
 		</div>
-		<div style="display: none;" class="zhan">
+		<div id="comedi" style="display: none;" class="zhan">
 			<p class="p-filt">Комедии</p>
 		</div>
-		<div style="display: none;" class="zhan">
+		<div id="tragedi" style="display: none;" class="zhan">
 			<p class="p-filt">Трагедии</p>
 		</div>
-		<div style="display: none;" class="zhan">
+		<div id="drams" style="display: none;" class="zhan">
 			<p class="p-filt">Драма</p>
 		</div>
-		<div style="display: none;" class="zhan">
+		<div id="melodrams" style="display: none;" class="zhan">
 			<p class="p-filt">Мелодрама</p>
+		</div>
+		<div id="sciFi" style="display: none;" class="zhan">
+			<p class="p-filt">Научная фантастика</p>
+		</div>
+		<div id="fi" style="display: none;" class="zhan">
+			<p class="p-filt">Фентази</p>
 		</div>
 	</div>
 	<script type="text/javascript">
-	var st = document.documentElement
+	let open = ""
 		let cat = {
 			genre: {
 				thriller: false,
@@ -53,14 +59,112 @@
 				comedi: false,
 				tragedi: false,
 				drams: false,
-				melodrams: false
+				melodrams: false,
+				sciFi: false,
+				fi: false
 			}
 		}
-
-		$('#i-zh').click(function () {
-			$('.zhan').attr('style', "")
-			$('#i-zh').attr('style', "transform: rotate(180);")
+		$('#thriller').click(function (){
+			cat.genre.thriller = !cat.genre.thriller
+			if (cat.genre.thriller == true) {
+				$('#thriller').attr('style', "background-color: #0B0754;")
+			}
+			else{
+				$('#thriller').attr('style', "")
+			}
 		})
+		$('#detective').click(function (){
+			cat.genre.detective = !cat.genre.detective
+			if (cat.genre.detective == true) {
+				$('#detective').attr('style', "background-color: #0B0754;")
+			}
+			else{
+				$('#detective').attr('style', "")
+			}
+		})
+		$('#romans').click(function (){
+			cat.genre.romans = !cat.genre.romans
+			if (cat.genre.romans == true) {
+				$('#romans').attr('style', "background-color: #0B0754;")
+			}
+			else{
+				$('#romans').attr('style', "")
+			}
+		})
+		$('#comedi').click(function (){
+			cat.genre.comedi = !cat.genre.comedi
+			if (cat.genre.comedi == true) {
+				$('#comedi').attr('style', "background-color: #0B0754;")
+			}
+			else{
+				$('#comedi').attr('style', "")
+			}
+		})
+		$('#tragedi').click(function (){
+			cat.genre.tragedi = !cat.genre.tragedi
+			if (cat.genre.tragedi == true) {
+				$('#tragedi').attr('style', "background-color: #0B0754;")
+			}
+			else{
+				$('#tragedi').attr('style', "")
+			}
+		})
+		$('#drams').click(function (){
+			cat.genre.drams = !cat.genre.drams
+			if (cat.genre.drams == true) {
+				$('#drams').attr('style', "background-color: #0B0754;")
+			}
+			else{
+				$('#drams').attr('style', "")
+			}
+		})
+		$('#melodrams').click(function (){
+			cat.genre.melodrams = !cat.genre.melodrams
+			if (cat.genre.melodrams == true) {
+				$('#melodrams').attr('style', "background-color: #0B0754;")
+			}
+			else{
+				$('#melodrams').attr('style', "")
+			}
+		})
+		$('#sciFi').click(function (){
+			cat.genre.sciFi = !cat.genre.sciFi
+			if (cat.genre.sciFi == true) {
+				$('#sciFi').attr('style', "background-color: #0B0754;")
+			}
+			else{
+				$('#sciFi').attr('style', "")
+			}
+		})
+		$('#fi').click(function (){
+			cat.genre.fi = !cat.genre.fi
+			if (cat.genre.fi == true) {
+				$('#fi').attr('style', "background-color: #0B0754;")
+			}
+			else{
+				$('#fi').attr('style', "")
+			}
+		})
+let keys = ["thriller", "detective", "romans", "comedi", "tragedi", "drams", "melodrams", "sciFi", "fi"]
+		$('#d-zh').click(function () {
+			if (open !== ""){
+				if (open == "genre"){
+					$('.zhan').attr('style', "display: none;")
+					$('#i-zh').attr('style', "transform: rotate(0deg);")
+					open = ""
+				}
+			}
+			else{
+				$('.zhan').attr('style', "")
+				for (let i = 0; i < 9; i++){
+
+				}
+					$('#i-zh').attr('style', "transform: rotate(180deg);")
+					open = "genre"
+			}
+
+		})
+
 	</script>
 </body>
 </html>

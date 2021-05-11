@@ -38,7 +38,7 @@ body{
   left: 26vw;
   width: 19vw;
   top: 0.5vh;
-  font-family: Montserrat;
+  font-family: montserrat-m;
   font-weight: 500;
   height: 3.5vh;
   font-size: 0.85vw;
@@ -52,7 +52,7 @@ body{
 }
 
 .rate{
-  font-family: Montserrat;
+  font-family: montserrat-m;
   font-size: 1.2vw;
   color: green;
   position: relative;
@@ -78,14 +78,23 @@ body{
   left: 20vw;
 }
 .cat-text{
-  font-family: Montserrat;
+  font-family: montserrat-m;
   font-weight: 600;
   color: white;
   font-size: 1.5vw;
   margin: 3vh 9vw 1vh 1vw;
 }
 .zhan{
-  font-family: Montserrat;
+  font-family: montserrat-m;
+  font-weight: 600;
+  color: white;
+  background-color: #BED2FA;
+  font-size: 1vw;
+  display: flex;
+  margin: 1vh 1vw 1vh 1vw;
+}
+.zhan-host{
+  font-family: montserrat-m;
   font-weight: 600;
   color: white;
   background-color: #BED2FA;
@@ -103,7 +112,7 @@ body{
   margin-bottom: 1vh;
 }
 #i-zh{
-  padding-left: 9.5vw;
+  margin-left: 9.5vw;
 }
 .chek-filt{
   width: 1vw;
