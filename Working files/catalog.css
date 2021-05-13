@@ -92,7 +92,7 @@ body{
   background-color: #BED2FA;
   font-size: 1vw;
   display: flex;
-  margin: 1vh 1vw 1vh 1vw;
+  margin: 1vh 1vw 1vh 2vw;
 }
 .zhan-host{
   font-family: montserrat-m;
@@ -136,5 +136,35 @@ body{
   background-color: #BED2FA;
   font-size: 1vw;
   display: flex;
-  margin: 1vh 1vw 1vh 1vw;
+  margin: 1vh 1vw 1vh 2vw;
+}
+.zhan-2:hover{
+  background-color: #89B0FF;
+}
+.stars{
+  align-items: flex-start;
+  display: flex;
+}
+.book{
+  background-color: white;
+  position: absolute;
+  top: 15vh;
+  left: 40vw;
+}
+#book-img{
+  margin: 2vh 1vw 2vh 1vw;
+  width: 11vw;
+  height: 25vh;
+}
+#book-name{
+  font-family: montserrat-regular;
+  margin: 0vh 1vw 1vh 1vw;
+}
+#book-author{
+  font-family: montserrat-regular;
+  margin: 0vh 1vw 0.7vh 1vw;
+  color: #C4C4C4;
+}
+.stars{
+  width: 1.2vw;
 }

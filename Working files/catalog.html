@@ -55,22 +55,22 @@
 		<div id="future" style="display: none;" class="zhan-2">
 			<p class="p-filt">Про будушие</p>
 		</div>
-		<div id="future" style="display: none;" class="zhan-2">
+		<div id="past" style="display: none;" class="zhan-2">
 			<p class="p-filt">Про прошлое</p>
 		</div>
-		<div id="future" style="display: none;" class="zhan-2">
+		<div id="space" style="display: none;" class="zhan-2">
 			<p class="p-filt">Про космос</p>
 		</div>
-		<div id="future" style="display: none;" class="zhan-2">
+		<div id="war" style="display: none;" class="zhan-2">
 			<p class="p-filt">Про войну</p>
 		</div>
-		<div id="future" style="display: none;" class="zhan-2">
+		<div id="prikl" style="display: none;" class="zhan-2">
 			<p class="p-filt">Про приключения</p>
 		</div>
-		<div id="future" style="display: none;" class="zhan-2">
+		<div id="love" style="display: none;" class="zhan-2">
 			<p class="p-filt">Про любовь</p>
 		</div>
-		<div id="future" style="display: none;" class="zhan-2">
+		<div id="kids" style="display: none;" class="zhan-2">
 			<p class="p-filt">Про детей</p>
 		</div>
 		<div id="d-zh-3" class="zhan-host">
@@ -121,8 +121,27 @@
 			<p class="p-filt">Подросткам</p>
 		</div>
 
-
 	</div>
+
+
+
+	<div class="book">
+		<img id="book-img" src="https://blog.hubspot.com/hubfs/books-every-aspiring-ceo-should-read.jpg" alt="">
+		<p id='book-name'><b>Name</b></p>
+		<p id="book-author"><b>Author</b></p>
+		<div class="stars">
+			<img style="margin-left: 0.7vw;" class="stars" src="ant-design_star-filledstar.svg" alt="">
+			<img class="stars" src="ant-design_star-filledstar.svg" alt="">
+			<img class="stars" src="ant-design_star-filledstar.svg" alt="">
+			<img class="stars" src="ant-design_star-filledstar.svg" alt="">
+			<img class="stars" src="ant-design_star-outlinedstra2.svg" alt="">
+		</div>
+		<img src="" alt="">
+	</div>
+
+
+
+
 	<script type="text/javascript">
 	let open = ""
 		let cat = {
@@ -240,15 +259,14 @@
 let keys = [thriller, detective, romans, comedi, tragedi, drams, melodrams, sciFi, fi]
 let keysa = ["thriller", "detective", "romans", "comedi", "tragedi", "drams", "melodrams", "sciFi", "fi"]
 		$('#d-zh').click(function () {
-			if (open !== ""){
-				if (open == "genre"){
-					$('.zhan').attr('style', "display: none;")
-					$('#i-zh').attr('style', "transform: rotate(0deg);")
-					open = ""
-				}
-
+			if (open == "genre"){
+				$('.zhan-host').attr('style', '')
+				$('.zhan').attr('style', "display: none;")
+				$('#i-zh').attr('style', "transform: rotate(0deg);")
+				open = ""
 			}
 			else{
+				$('.zhan-host').attr('style', 'margin-right: 2vw;')
 				$('.zhan').attr('style', "")
 				keys = [cat.genre.thriller, cat.genre.detective, cat.genre.romans, cat.genre.comedi, cat.genre.tragedi, cat.genre.drams, cat.genre.melodrams, cat.genre.sciFi, cat.genre.fi]
 				for (let i = 0; i < 9; i++){
@@ -256,32 +274,124 @@ let keysa = ["thriller", "detective", "romans", "comedi", "tragedi", "drams", "m
 						$('#' + keysa[i]).attr('style', "background-color: #0B0754;")
 					}
 				}
-					$('#i-zh').attr('style', "transform: rotate(180deg);")
-					open = "genre"
+				$('#i-zh').attr('style', "transform: rotate(180deg);")
+				open = "genre"
+
 			}
+			$('.zhan-2').attr('style', "display: none;")
+			$('#i-zh-2').attr('style', "transform: rotate(0deg);")
+			$('.zhan-3').attr('style', "display: none;")
+			$('#i-zh-3').attr('style', "transform: rotate(0deg);")
+			$('.zhan-4').attr('style', "display: none;")
+			$('#i-zh-4').attr('style', "transform: rotate(0deg);:")
+
 
 		})
 
-		$('#d-zh-2').click(function () {
-			if (open !== ""){
-				if (open == "genre"){
-					$('.zhan-2').attr('style', "display: none;")
-					$('#i-zh-2').attr('style', "transform: rotate(0deg);")
-					open = ""
-				}
 
+
+
+		$('#future').click(function (){
+			cat.topic.future = !cat.topic.future
+			if (cat.topic.future == true) {
+				$('#future').attr('style', "background-color: #0B0754;")
 			}
 			else{
+				$('#future').attr('style', "")
+			}
+		})
+
+		$('#past').click(function (){
+			cat.topic.past = !cat.topic.past
+			if (cat.topic.past == true) {
+				$('#past').attr('style', "background-color: #0B0754;")
+			}
+			else{
+				$('#past').attr('style', "")
+			}
+		})
+
+		$('#space').click(function (){
+			cat.topic.space = !cat.topic.space
+			if (cat.topic.space == true) {
+				$('#space').attr('style', "background-color: #0B0754;")
+			}
+			else{
+				$('#space').attr('style', "")
+			}
+		})
+
+		$('#war').click(function (){
+			cat.topic.war = !cat.topic.war
+			if (cat.topic.war == true) {
+				$('#war').attr('style', "background-color: #0B0754;")
+			}
+			else{
+				$('#war').attr('style', "")
+			}
+		})
+
+		$('#prikl').click(function (){
+			cat.topic.prikl = !cat.topic.prikl
+			if (cat.topic.prikl == true) {
+				$('#prikl').attr('style', "background-color: #0B0754;")
+			}
+			else{
+				$('#prikl').attr('style', "")
+			}
+		})
+
+		$('#love').click(function (){
+			cat.topic.love = !cat.topic.love
+			if (cat.topic.love == true) {
+				$('#love').attr('style', "background-color: #0B0754;")
+			}
+			else{
+				$('#love').attr('style', "")
+			}
+		})
+
+		$('#kids').click(function (){
+			cat.topic.kids = !cat.topic.kids
+			if (cat.topic.kids == true) {
+				$('#kids').attr('style', "background-color: #0B0754;")
+			}
+			else{
+				$('#kids').attr('style', "")
+			}
+		})
+
+
+
+
+let keys2 = [future, past, space, war, prikl, love, kids]
+let keysa2 = ["future", "past", "space", "war", "prikl", "love", "kids"]
+		$('#d-zh-2').click(function () {
+			if (open == "topic"){
+				$('.zhan-host').attr('style', '')
+				$('.zhan-2').attr('style', "display: none;")
+				$('#i-zh-2').attr('style', "transform: rotate(0deg);")
+				open = ""
+			}
+			else{
+				$('.zhan-host').attr('style', 'margin-right: 2vw;')
 				$('.zhan-2').attr('style', "")
-				keys = [cat.genre.thriller, cat.genre.detective, cat.genre.romans, cat.genre.comedi, cat.genre.tragedi, cat.genre.drams, cat.genre.melodrams, cat.genre.sciFi, cat.genre.fi]
+				keys2 = [cat.topic.future, cat.topic.past, cat.topic.space, cat.topic.war, cat.topic.prikl, cat.topic.love, cat.topic.kids]
 				for (let i = 0; i < 9; i++){
-					if (keys[i] == true){
-						$('#' + keysa[i]).attr('style', "background-color: #0B0754;")
+					if (keys2[i] == true){
+						$('#' + keysa2[i]).attr('style', "background-color: #0B0754;")
 					}
 				}
-					$('#i-zh-2').attr('style', "transform: rotate(180deg);")
-					open = "genre"
+				$('#i-zh-2').attr('style', "transform: rotate(180deg);")
+				open = "topic"
+
 			}
+			$('.zhan').attr('style', "display: none;")
+			$('#i-zh').attr('style', "transform: rotate(0deg);")
+			$('.zhan-3').attr('style', "display: none;")
+			$('#i-zh-3').attr('style', "transform: rotate(0deg);")
+			$('.zhan-4').attr('style', "display: none;")
+			$('#i-zh-4').attr('style', "transform: rotate(0deg);:")
 
 		})
 
