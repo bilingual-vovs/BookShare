@@ -75,6 +75,7 @@ body{
   position: fixed;
   background-color: #6D89CF;
   top: 15vh;
+  padding-bottom: 1vh;
   left: 20vw;
 }
 .cat-text{
@@ -82,7 +83,7 @@ body{
   font-weight: 600;
   color: white;
   font-size: 1.5vw;
-  margin: 3vh 9vw 1vh 1vw;
+  margin: 3vh 8vw 1vh 1vw;
 }
 .zhan{
   font-family: montserrat-m;
@@ -100,6 +101,7 @@ body{
   background-color: #BED2FA;
   font-size: 1vw;
   display: flex;
+  padding-right: 0.5vw;
   margin: 1vh 1vw 1vh 1vw;
 }
 .zhan:hover{
@@ -112,9 +114,27 @@ body{
   margin-bottom: 1vh;
 }
 #i-zh{
-  margin-left: 9.5vw;
+  margin-left: 9vw;
 }
 .chek-filt{
   width: 1vw;
   margin-top: 1.8vh;
+}
+#i-zh-2{
+  margin-left: 10vw;
+}
+#i-zh-3{
+  margin-left: 8.5vw;
+}
+#i-zh-4{
+  margin-left: 10vw;
+}
+.zhan-2{
+  font-family: montserrat-m;
+  font-weight: 600;
+  color: white;
+  background-color: #BED2FA;
+  font-size: 1vw;
+  display: flex;
+  margin: 1vh 1vw 1vh 1vw;
 }

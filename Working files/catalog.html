@@ -48,6 +48,80 @@
 		<div id="fi" style="display: none;" class="zhan">
 			<p class="p-filt">Фентази</p>
 		</div>
+		<div id="d-zh-2" class="zhan-host">
+			<p class="p-filt">Темы</p>
+			<img style="transform: rotate(0deg);" id="i-zh-2" src="dashicons_arrow-downtriangle.svg" alt="">
+		</div>
+		<div id="future" style="display: none;" class="zhan-2">
+			<p class="p-filt">Про будушие</p>
+		</div>
+		<div id="future" style="display: none;" class="zhan-2">
+			<p class="p-filt">Про прошлое</p>
+		</div>
+		<div id="future" style="display: none;" class="zhan-2">
+			<p class="p-filt">Про космос</p>
+		</div>
+		<div id="future" style="display: none;" class="zhan-2">
+			<p class="p-filt">Про войну</p>
+		</div>
+		<div id="future" style="display: none;" class="zhan-2">
+			<p class="p-filt">Про приключения</p>
+		</div>
+		<div id="future" style="display: none;" class="zhan-2">
+			<p class="p-filt">Про любовь</p>
+		</div>
+		<div id="future" style="display: none;" class="zhan-2">
+			<p class="p-filt">Про детей</p>
+		</div>
+		<div id="d-zh-3" class="zhan-host">
+			<p class="p-filt">Возраст</p>
+			<img style="transform: rotate(0deg);" id="i-zh-3" src="dashicons_arrow-downtriangle.svg" alt="">
+		</div>
+		<div id="future" style="display: none;" class="zhan-3">
+			<p class="p-filt">0+</p>
+		</div>
+		<div id="future" style="display: none;" class="zhan-3">
+			<p class="p-filt">6+</p>
+		</div>
+		<div id="future" style="display: none;" class="zhan-3">
+			<p class="p-filt">8+</p>
+		</div>
+		<div id="future" style="display: none;" class="zhan-3">
+			<p class="p-filt">12+</p>
+		</div>
+		<div id="future" style="display: none;" class="zhan-3">
+			<p class="p-filt">16+</p>
+		</div>
+		<div id="future" style="display: none;" class="zhan-3">
+			<p class="p-filt">18+</p>
+		</div>
+		<div id="future" style="display: none;" class="zhan-3">
+			<p class="p-filt">21+</p>
+		</div>
+		<div id="d-zh-4" class="zhan-host">
+			<p class="p-filt">Кому</p>
+			<img style="transform: rotate(0deg);" id="i-zh-4" src="dashicons_arrow-downtriangle.svg" alt="">
+		</div>
+		<div id="future" style="display: none;" class="zhan-4">
+			<p class="p-filt">Дедушке</p>
+		</div>
+		<div id="future" style="display: none;" class="zhan-4">
+			<p class="p-filt">Бабушке</p>
+		</div>
+		<div id="future" style="display: none;" class="zhan-4">
+			<p class="p-filt">Маме</p>
+		</div>
+		<div id="future" style="display: none;" class="zhan-4">
+			<p class="p-filt">Папе</p>
+		</div>
+		<div id="future" style="display: none;" class="zhan-4">
+			<p class="p-filt">Детям</p>
+		</div>
+		<div id="future" style="display: none;" class="zhan-4">
+			<p class="p-filt">Подросткам</p>
+		</div>
+
+
 	</div>
 	<script type="text/javascript">
 	let open = ""
@@ -62,6 +136,24 @@
 				melodrams: false,
 				sciFi: false,
 				fi: false
+			},
+			topic: {
+				future: false,
+				past: false,
+				space: false,
+				war: false,
+				prikl: false,
+				love: false,
+				kids: false
+			},
+			age: {
+				zero: false,
+				six: false,
+				ate: false,
+				twelwe: false,
+				sixteen: false,
+				ateteen: false,
+				twentyOne: false
 			}
 		}
 		$('#thriller').click(function (){
@@ -145,7 +237,8 @@
 				$('#fi').attr('style', "")
 			}
 		})
-let keys = ["thriller", "detective", "romans", "comedi", "tragedi", "drams", "melodrams", "sciFi", "fi"]
+let keys = [thriller, detective, romans, comedi, tragedi, drams, melodrams, sciFi, fi]
+let keysa = ["thriller", "detective", "romans", "comedi", "tragedi", "drams", "melodrams", "sciFi", "fi"]
 		$('#d-zh').click(function () {
 			if (open !== ""){
 				if (open == "genre"){
@@ -153,13 +246,40 @@ let keys = ["thriller", "detective", "romans", "comedi", "tragedi", "drams", "me
 					$('#i-zh').attr('style', "transform: rotate(0deg);")
 					open = ""
 				}
+
 			}
 			else{
 				$('.zhan').attr('style', "")
+				keys = [cat.genre.thriller, cat.genre.detective, cat.genre.romans, cat.genre.comedi, cat.genre.tragedi, cat.genre.drams, cat.genre.melodrams, cat.genre.sciFi, cat.genre.fi]
 				for (let i = 0; i < 9; i++){
-
+					if (keys[i] == true){
+						$('#' + keysa[i]).attr('style', "background-color: #0B0754;")
+					}
 				}
 					$('#i-zh').attr('style', "transform: rotate(180deg);")
+					open = "genre"
+			}
+
+		})
+
+		$('#d-zh-2').click(function () {
+			if (open !== ""){
+				if (open == "genre"){
+					$('.zhan-2').attr('style', "display: none;")
+					$('#i-zh-2').attr('style', "transform: rotate(0deg);")
+					open = ""
+				}
+
+			}
+			else{
+				$('.zhan-2').attr('style', "")
+				keys = [cat.genre.thriller, cat.genre.detective, cat.genre.romans, cat.genre.comedi, cat.genre.tragedi, cat.genre.drams, cat.genre.melodrams, cat.genre.sciFi, cat.genre.fi]
+				for (let i = 0; i < 9; i++){
+					if (keys[i] == true){
+						$('#' + keysa[i]).attr('style', "background-color: #0B0754;")
+					}
+				}
+					$('#i-zh-2').attr('style', "transform: rotate(180deg);")
 					open = "genre"
 			}
 
