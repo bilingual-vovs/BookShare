@@ -80,3 +80,20 @@ a {
 .btn:disabled {
   background-color: #878787;
 }
+
+.welcome {
+  margin-bottom: 86px;
+  padding-top: 125px;
+  padding-bottom: 406px;
+  background: url("../img/welcome_bg.svg") no-repeat 152px 0;
+}
+
+.welcome__title {
+  font-size: 64px;
+  font-weight: 400;
+  color: #0b0754;
+}
+
+.welcome__text {
+  margin-bottom: 36px;
+}
